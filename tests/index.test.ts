@@ -1,11 +1,25 @@
-import { sum } from '../src/main';
+import { GreetingModel } from '../src/GreetingModel';
 
-describe('Sum should be', () => {
-  test('total of 3 when adding 1 and 2', () => {
-    const expectedOutput = 3;
+describe('GreetingModel', () => {
+  test('uses world when the name is empty', () => {
+    const model = new GreetingModel();
 
-    let result = sum(1, 2);
+    expect(model.getMessage()).toBe('hello world');
+  });
 
-    expect(result).toBe(expectedOutput);
+  test('uses the entered name when it is present', () => {
+    const model = new GreetingModel();
+
+    model.setName('Lieuwe');
+
+    expect(model.getMessage()).toBe('hello Lieuwe');
+  });
+
+  test('trims the name before greeting', () => {
+    const model = new GreetingModel();
+
+    model.setName('  Lieuwe  ');
+
+    expect(model.getMessage()).toBe('hello Lieuwe');
   });
 });

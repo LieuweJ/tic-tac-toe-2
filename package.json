@@ -1,15 +1,15 @@
 {
   "name": "tic-tac-css",
   "version": "0.0.1",
-  "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx --fix",
     "coverage": "npx jest --coverage",
-    "compile": "npx tsc",
-    "update-kata": "npx tsc && node dist/main.js",
-    "kata": "node dist/main.js",
-    "help": "echo \"Useful commands in this project:\n- 'npm run help' - see useful commands.\n- 'npm run test' - run all tests.\n- 'npm run coverage' - run all tests and generate a coverage report.\n- 'npm run compile' - compile the TypeScript code to JavaScript (output goes to /dist).\n- 'npm run kata' - run the kata (executes main.js).\n- 'npm run update-kata' - compile latest code and run the kata (executes main.js).\""
+    "compile": "tsc --noEmit",
+    "help": "echo \"Useful commands in this project:\n- 'npm run help' - see useful commands.\n- 'npm run dev' - start the local browser app.\n- 'npm run build' - create a production bundle.\n- 'npm run preview' - serve the production bundle locally.\n- 'npm run test' - run all tests.\n- 'npm run coverage' - run all tests and generate a coverage report.\n- 'npm run compile' - type-check the TypeScript code.\n- 'npm run lint' - lint and fix TypeScript files.\""
   },
   "keywords": [],
   "author": "",
@@ -29,7 +29,8 @@
     "jest": "^29.7.0",
     "jest-each": "^29.7.0",
     "prettier": "^3.8.1",
-    "ts-jest": "^29.4.6"
+    "ts-jest": "^29.4.6",
+    "vite": "^8.0.3"
   },
   "type": "commonjs"
 }

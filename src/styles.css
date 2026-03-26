@@ -1,0 +1,19 @@
+body {
+  border: 2px solid black;
+}
+
+#greenInputDiv {
+  border: 2px solid green;
+}
+
+#nameInput {
+  border: 2px solid green;
+}
+
+#greetButton {
+  border: 2px solid blue;
+}
+
+#redOutputDiv {
+  border: 2px solid red;
+}
