@@ -5,9 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest",
+    "test": "vitest run",
     "lint": "eslint . --ext .ts,.tsx --fix",
-    "coverage": "npx jest --coverage",
+    "coverage": "vitest run --coverage",
     "compile": "tsc --noEmit",
     "help": "echo \"Useful commands in this project:\n- 'npm run help' - see useful commands.\n- 'npm run dev' - start the local browser app.\n- 'npm run build' - create a production bundle.\n- 'npm run preview' - serve the production bundle locally.\n- 'npm run test' - run all tests.\n- 'npm run coverage' - run all tests and generate a coverage report.\n- 'npm run compile' - type-check the TypeScript code.\n- 'npm run lint' - lint and fix TypeScript files.\""
   },
@@ -19,18 +19,16 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
+    "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-prettier": "^5.5.5",
-    "jest": "^29.7.0",
-    "jest-each": "^29.7.0",
     "prettier": "^3.8.1",
-    "ts-jest": "^29.4.6",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2"
   },
   "type": "commonjs"
 }

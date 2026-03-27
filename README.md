@@ -11,7 +11,7 @@ The starter is intentionally incomplete. It only wires a very small browser exam
 - One controller class
 - One view class with an injected `HTMLDivElement`
 - One tiny model module with a `world` fallback
-- Jest for unit tests and ESLint for TypeScript linting
+- Vitest for unit tests and ESLint for TypeScript linting
 
 ## Useful commands
 
